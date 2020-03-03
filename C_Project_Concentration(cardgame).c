@@ -448,13 +448,13 @@ void startGame(TypeCard desktop[4][13]){
                 showDesktop(desktop);
                 printf("\n");
                 playGame_HumCom(desktop);
-            }else if(userChoice == 1){
+            }else if(userChoice == 2){
                 shuffleCard(desktop);
                 closeCard(desktop);
                 printf("\n");
                 showDesktop(desktop);
                 printf("\n");
-                playGame_HumCom(desktop);
+                playGame_ComCom(desktop);
             }else if(userChoice == 0){
                 i = 1;
                 exit(0);
@@ -462,6 +462,7 @@ void startGame(TypeCard desktop[4][13]){
         }else{
             return startGame(desktop);
         }
+}
 }
 
 
